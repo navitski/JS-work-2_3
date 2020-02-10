@@ -5,11 +5,11 @@
 var n = prompt('Введите трехзначное число:', );
 n = parseInt(n);
 	if (isNaN(n)){
-    alert("Введено не число!")
+    alert("Число не введено!")
 	exit;
 	}
 	
-	if (n < 1000 & n > 100){
+	if ((Math.abs(n)) >= 100 & (Math.abs(n)) < 1000) {
 	  a = n % 10
 	  a = parseInt(a)
 	  //alert (a)
