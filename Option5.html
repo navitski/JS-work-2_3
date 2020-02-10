@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var n = prompt('Введите трехзначное число:', );
+n = parseInt(n);
+	if (isNaN(n)){
+    alert("Введено не число!")
+	exit;
+	}
+	
+	if (n < 1000 & n > 100){
+	  a = n % 10
+	  a = parseInt(a)
+	  //alert (a)
+	  n = n / 10
+	
+	  b = n % 10
+	  b = parseInt(b)
+	  //alert (b)
+	  n = n / 10
+	  
+	  c = n % 10
+	  c = parseInt(c)
+	  //alert (c)
+	  n = n / 10
+	}
+	
+	else {
+    alert("Введено не трехзначное число!")
+	exit;
+	}
+	
+	if (a == b || a == c || b == c) {
+	  alert ("Повторяющиеся цифры есть")
+	 }
+	 
+	else {
+	  alert ("Повторяющихся цифр нет")
+	}
+</script>
+</body>
+</html>
